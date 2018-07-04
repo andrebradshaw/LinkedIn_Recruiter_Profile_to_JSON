@@ -93,3 +93,4 @@ var eduSudoArr = '['+eduArray.toString()+']';
 var posSudoArr = '['+positionsArray.toString()+']';
 
 var jsonOut = '{"profileLink": "http://www.linkedin.com/in/'+profilePath+'","firstName":"'+firstName+'","lastName":"'+lastName+'","location":"'+local+'","zipcode":"'+zipcode+'","experience":'+posSudoArr+',"education":'+eduSudoArr+',"skills":'+returnSkillsAsSudoArray()+'}';
+console.log(jsonOut);
