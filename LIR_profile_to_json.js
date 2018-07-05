@@ -33,7 +33,7 @@ function returnSkillsAsSudoArray(){
 			var itm = skillItem[i].innerText;
 			skillArr.push(itm);
 		}
-	return '["'+skillArr.toString().replace(/\&|\=/g, '').replace(/,/g, '","')+'"]';
+	return '["'+skillArr.toString().replace(/\&|\=|"|\#/g, '').replace(/,/g, '","')+'"]';
 	}else{
 	return '[]';
 
