@@ -70,7 +70,7 @@ var arr = [];
 	if(elm != null){
 	var itm = elm.getElementsByClassName('position');	
 	for(i=0; i<itm.length; i++){
-		let dateCont = reg(/.+?(?=\()/.exec(checker(itm[i].getElementsByClassName('date-range')[0], 'text')), 0);
+		let dateCont = reg(/.+?(?=\()|.+?\d+(?=\S+,)/.exec(checker(itm[i].getElementsByClassName('date-range')[0], 'text')), 0);
 
 		let geo = checker(itm[i].getElementsByClassName('location')[0], 'text')
 
